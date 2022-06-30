@@ -1,5 +1,4 @@
 #include <stdio.h>
-/* print text in the main */
 int main(void)
 {
       /**
