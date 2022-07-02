@@ -2,10 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main function 
- * description negative positive
- * negative ,positive or zero
- * final elase return 
+ * main - main block
+ * Description: Print negative positive or  zero.
+ * Return: 0
  */
 int main(void)
 {
@@ -20,5 +19,6 @@ int main(void)
 		printf("%i is negative\n", n);
 	else
 		printf("%i is zero\n", n);
+	
 	return (0);
 }
