@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main  function
- * print last digit
+ * Description: print last digit
  * return 0
  */
 int main(void)
@@ -13,7 +13,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	m = n% 10;
+	m = n % 10;
 
 	if (m > 5)
 		printf("Last digit of %i is %i and is greater than 5\n", n, m);
