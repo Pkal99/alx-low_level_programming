@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * Description : - Print alphabet in lowercase 
- * Return: 0
+ *main - Print alphabet followed by a new line.
+ *Description: You are not allowed to include standard libraries.
+ *Return: 0
  */
 void print_alphabet(void)
 {
