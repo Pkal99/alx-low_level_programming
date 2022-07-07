@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_alphabet followed by a new line.
- * Return: 0
- */
+* print_alphabet followed by a new line.
+* Return: 0
+*/
 void print_alphabet(void)
 {
 	char c = 'a';
