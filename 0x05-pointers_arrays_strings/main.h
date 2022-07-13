@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
 * main - check the code 
@@ -6,7 +5,7 @@
 */
 int main(void)
 {
-	int n;
+i	nt n;
 
 	n = 402;
 	printf("n=%d\n", n);
