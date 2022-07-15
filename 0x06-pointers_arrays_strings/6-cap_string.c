@@ -2,7 +2,6 @@
 /**
 * cap_string - capitalize all words of a string
 * @str: string
-* Separators of words: space, tabulation, new line, ,, ;, ., !, ?, , (, ), {, and }
 * Return: `string`
 */
 char *cap_string(char *str)
