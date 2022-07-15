@@ -11,13 +11,14 @@ void print_number(int n)
 	long num; /* convert int to long */
 
 	num = n;
-
+	/* negatives numbers */
 	if (num < 0)
 	{
 		num *= -1;
 		_putchar('-');
 	}
 
+	/* count upward */
 	m = 1;
 	c = 1;
 	while (c)
@@ -27,7 +28,8 @@ void print_number(int n)
 		else
 			c = 0;
 	}
-
+	
+	/* count downard */
 	while (num >= 0)
 	{
 		if (m == 1)
