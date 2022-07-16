@@ -14,7 +14,7 @@ char *cap_string(char *str)
 	{
 		if (str[0] > 96 && str[0] < 123)
 			chg = 1;
-		for (c = 0; notations[a] != '\0'; c++)
+		for (a = 0; notations[a] != '\0'; a++)
 		{
 			if (notations[a] == str[i])
 				chg = 1;
