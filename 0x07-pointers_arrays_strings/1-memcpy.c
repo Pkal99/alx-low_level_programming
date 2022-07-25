@@ -1,18 +1,16 @@
 #include "main.h"
-
 /**
- *  * _memcpy - copy memory area
- *   * @dest: char array to copy into
- *    * @src: char array to copy from
- *     * @n: number of elements to copy
- *      * Return: pointer to `dest`
- *       */
-
+* _memcpy - copy memory area
+* @dest: char array to copy into kal
+* @src: char array to copy from
+* @n: number of elements to copy
+* Return: pointer to `dest`
+*/
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	char *yolo;
+	char *kal;
 
-	yolo = dest;
+	kal = dest;
 	while (n > 0)
 	{
 		*dest = *src;
@@ -21,5 +19,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		n--;
 	}
 
-	return (yolo);
+	return (kal);
 }
