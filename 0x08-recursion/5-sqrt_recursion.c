@@ -1,29 +1,30 @@
 #include "main.h"
 /**
-* _sqrt_recursion - return the natural square root of a number
-* @n: int number
-* Return: If no natural square root, return -1. Else return natural
-* square root
+* sqr_con - finds square root of n
+* @n: number to square
+* @i: test case for root
+* Description: find square root of n using recursion and two variables
+* Return: square root of n or -1 if none
 */
-/**
-* kalsqrt - helper function to solve _sqrt_recursion
-* @c: number to determine if square root
-* @i: incrementer to compare against `c`
-* Return: square root if natural square root, or -1 if none found
-*/
-int halp(int c, int i)
+int sqr_con(int n, int i)
 {
-	int square;
-
-	square = i * i;
-	if (square == c)
+	if (n == i * i)
 		return (i);
-	else if (square < c)
-		return (kalsqrt(c, i + 1));
-	else
+	else if (n < i * i)
 		return (-1);
+
+	return (sqr_con(n, i + 1));
 }
+/**
+* _sqrt_recursion - find natural square root of n
+* @n: number to square
+* Description: find square root of n using recursion
+* Return: square root of n or -1 if none
+*/
 int _sqrt_recursion(int n)
 {
-	return (kalsqrt(n, 1));
+	if (n < 0)
+		return (-1);
+
+	return (sqr_con(n, 0));
 }
