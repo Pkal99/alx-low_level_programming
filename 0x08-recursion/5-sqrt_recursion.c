@@ -5,18 +5,13 @@
 * Return: If no natural square root, return -1. Else return natural
 * square root
 */
-int _sqrt_recursion(int n)
-{
-	return (kalsqrt(n, 1));
-}
 /**
 * kalsqrt - helper function to solve _sqrt_recursion
 * @c: number to determine if square root
 * @i: incrementer to compare against `c`
 * Return: square root if natural square root, or -1 if none found
- */
-
-int kalsqrt(int c, int i)
+*/
+int halp(int c, int i)
 {
 	int square;
 
@@ -27,4 +22,8 @@ int kalsqrt(int c, int i)
 		return (kalsqrt(c, i + 1));
 	else
 		return (-1);
+}
+int _sqrt_recursion(int n)
+{
+	return (kalsqrt(n, 1));
 }
