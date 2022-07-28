@@ -13,7 +13,6 @@ unsigned int _strspn(char *s, char *accept)
 
 	a = 0;
 	c = 0;
-
 	while (s[a] != '\0')
 	{
 		b = 0;
@@ -28,7 +27,7 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		if (accept[b] == '\0')
 			break;
-			a++;
+		a++;
 	}
 	return (c);
 }
