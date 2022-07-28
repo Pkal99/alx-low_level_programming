@@ -2,7 +2,7 @@
 /**
 * _strchr - locate character in a string
 * @s: char array of a string
-* @c: char to look for char from string
+* @c: char to look for char from string s
 * Return: NULL if char not found, or pointer to first occurrence of char `c`
 */
 char *_strchr(char *s, char c)
