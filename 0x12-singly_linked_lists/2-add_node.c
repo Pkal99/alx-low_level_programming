@@ -9,37 +9,26 @@
 */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *temp;
+	list_t *new_node;
+	int c;
 
-	if (head != NULL && str != NULL)
+	for (c = 0; dup_str[c] != '\0'; c++)
+		;
+	new_node = malloc(sizeof(list_t));
+	if (new_node == NULL)
 	{
-		temp = malloc(sizeof(list_t));
-		if (temp == NULL)
-			return (NULL);
-
-		temp->str = strdup(str);
-		temp->len = _strlen(str);
-		temp->next = *head;
-
-		*head = temp;
-
-		return (temp);
+		free(new_node);
+		return (NULL);
 	}
-	return (0);
-}
-/**
-* _strlen - Returns the length of a string
-* @s: String to count
-* Return: String length
-*/
-int _strlen(const char *s)
-{
-	int c = 0;
-
-	while (*s)
+	new_node->str = strdup(str);
+	if (new_node->str == NULL)
 	{
-		s++;
-		c++;
+		free(new_node);
+		return (NULL);
 	}
-	return (c);
+	new_node->len = c;
+	new_node->next = *head;
+
+	*head = new_node;
+	return (*head);
 }
