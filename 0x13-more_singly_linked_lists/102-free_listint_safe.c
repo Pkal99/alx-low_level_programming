@@ -9,15 +9,21 @@
 */
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *friend, start;
-	size_t i;
+	listint_t *current, *hold;
+	size_t count;
 
-	start = head;
-	for (i = 0; head != NULL && head != start; i++)
+	count = 0;
+	current = *h;
+	while (current != NULL)
 	{
-		friend = head->next;
-		free(head);
-		head = friend;
+		count++;
+		hold = current;
+		current = current->next;
+		free(hold);
+
+		if (hold < current)
+			break;
 	}
-	return (i);
+	*h = NULL;
+	return (count);
 }
